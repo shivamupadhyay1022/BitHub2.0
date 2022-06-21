@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "471912610219",
+    "project_id": "bithub-2957c",
+    "storage_bucket": "bithub-2957c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471912610219:android:b2a567e0e69db039ea3aee",
+        "android_client_info": {
+          "package_name": "com.su.bithub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471912610219-sk3f6r66dts7g1mut18qip8h7vsknj8g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFTHK8o7_-TjfzUSJwcS_ggWYXBrZmgnc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471912610219-sk3f6r66dts7g1mut18qip8h7vsknj8g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
