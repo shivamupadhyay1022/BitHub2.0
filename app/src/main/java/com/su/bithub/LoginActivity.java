@@ -39,17 +39,14 @@ public class LoginActivity extends AppCompatActivity {
 
         auth = FirebaseAuth.getInstance();
 
-        List<String> states= Arrays.asList("CS","IT","ECE","Mechanical","Chemical","Production","QEDS");
-        final Spinner spinner=findViewById(R.id.login_branch);
-        ArrayAdapter adapter=new ArrayAdapter(LoginActivity.this,android.R.layout.simple_spinner_item,states);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
+
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String txt_email    = email.getText().toString().trim();
                 String txt_password = password.getText().toString().trim();
+
                 loginuser(txt_email,txt_password);
             }
         });
