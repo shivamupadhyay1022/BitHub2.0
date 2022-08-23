@@ -6,7 +6,10 @@
         <entry key="..\:/Android studio propj/BitHub20/app/src/main/res/layout/activity_Start.xml" value="0.225" />
         <entry key="..\:/Android studio propj/BitHub20/app/src/main/res/layout/activity_login.xml" value="0.203125" />
         <entry key="..\:/Android studio propj/BitHub20/app/src/main/res/layout/activity_main.xml" value="0.14537037037037037" />
-        <entry key="..\:/Android studio propj/BitHub20/app/src/main/res/layout/activity_register.xml" value="0.18229166666666666" />
+        <entry key="..\:/Android studio propj/BitHub20/app/src/main/res/layout/activity_register.xml" value="0.18" />
+        <entry key="..\:/Android studio propj/BitHub20/app/src/main/res/layout/dropdownlist.xml" value="0.271875" />
+        <entry key="..\:/Android studio propj/BitHub20/app/src/main/res/layout/tv_list.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android studio propj/BitHub20/app/src/main/res/menu/branch_menu.xml" value="0.27291666666666664" />
       </map>
     </option>
   </component>

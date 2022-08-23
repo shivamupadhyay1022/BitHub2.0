@@ -18,8 +18,7 @@
             android:layout_marginLeft="60sp"
             android:layout_marginTop="100sp"
             app:startIconDrawable="@drawable/ic_baseline_alternate_email_24"
-            app:endIconMode="custom"
-            app:endIconDrawable="@drawable/ic_baseline_cancel_24">
+            app:endIconMode="clear_text">
 
             <EditText
                 android:id="@+id/email"
@@ -40,8 +39,7 @@
             android:layout_below="@+id/layout_email"
             android:layout_marginTop="40sp"
             app:startIconDrawable="@drawable/ic_baseline_person_24"
-            app:endIconMode="custom"
-            app:endIconDrawable="@drawable/ic_baseline_cancel_24">
+            app:endIconMode="clear_text">
 
             <EditText
                 android:id="@+id/login_name"
@@ -53,23 +51,42 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-
-        <LinearLayout
-            android:id="@+id/login_Branchlayout"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/layout_name"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="60sp"
+            android:id="@+id/layout_branch"
             android:layout_marginTop="40sp"
-            android:orientation="horizontal">
+            android:hint="Branch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50sp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Select Branch"
+            <AutoCompleteTextView
+                android:id="@+id/select_branch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:textAlignment="center"
-                android:textSize="24sp" />
+                android:inputType="none"
+                android:text="--Select Branch--" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+<!--        <LinearLayout-->
+<!--            android:id="@+id/login_Branchlayout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/layout_name"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginLeft="60sp"-->
+<!--            android:layout_marginTop="40sp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Select Branch"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="24sp" />-->
 
 <!--            <Spinner-->
 <!--                android:id="@+id/login_branch"-->
@@ -80,24 +97,31 @@
 <!--                android:textAlignment="center" />-->
 
 <!--            <com.google.android.material.textfield.TextInputLayout-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_width="wrap_content">-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:id="@+id/layout_branch"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_below="@+id/layout_name"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginLeft="60sp"-->
+<!--                android:layout_marginTop="40sp"-->
+<!--                style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu">-->
 
 <!--            <AutoCompleteTextView-->
 <!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
 <!--                android:inputType="none"-->
-<!--                />-->
+<!--                android:text="Select Branch"/>-->
 
 <!--        </com.google.android.material.textfield.TextInputLayout>-->
-        </LinearLayout>
+<!--        </LinearLayout>-->
 
 
         <LinearLayout
             android:id="@+id/layout_YearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/login_Branchlayout"
+            android:layout_below="@+id/layout_branch"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="60sp"
             android:layout_marginTop="40sp"
@@ -169,6 +193,10 @@
             android:layout_marginTop="40dp"
             android:hint="password"
             android:textAlignment="center" />
+
+
+
+
 
         <Button
             android:id="@+id/register1"
