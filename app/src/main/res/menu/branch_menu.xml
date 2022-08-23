@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/branch_ece"
+        android:title="ECE" />
+    <item
+        android:id="@+id/branch_cse"
+        android:title="CSE" />
+    <item
+        android:id="@+id/branch_it"
+        android:title="IT" />
+    <item
+        android:id="@+id/branch_mechanical"
+        android:title="Mechanical" />
+    <item
+        android:id="@+id/branch_chemical"
+        android:title="Chemical" />
+    <item
+        android:id="@+id/branch_civil"
+        android:title="Civil" />
+</menu>
